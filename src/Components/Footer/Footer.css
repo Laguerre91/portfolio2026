@@ -28,7 +28,7 @@
 }
 
 #navigation-list { 
-    align-items: center;
+    align-items: start;
     display: flex;
     flex: none;
     flex-direction: row;

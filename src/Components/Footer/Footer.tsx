@@ -1,4 +1,4 @@
-import { Container, Stack } from '@chakra-ui/react';
+import { Container, Stack, Text } from '@chakra-ui/react';
 import './Footer.css';
 import { FooterLinksSection } from './FooterLinksSection';
 import { FooterTextSection } from './FooterTextSection';
@@ -11,8 +11,8 @@ const Footer = () => {
         <FooterTextSection />
       </Container>
 
-      <p className="footer-title">LARA AGUERRE</p>
-      <p className="footer-text">© 2026</p>
+      <Text className="footer-title">LARA AGUERRE</Text>
+      <Text className="footer-text">© 2026</Text>
     </Stack>
   );
 };
