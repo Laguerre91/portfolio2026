@@ -1,27 +1,20 @@
+import { Container, Stack } from '@chakra-ui/react';
 import './Footer.css';
+import { FooterLinksSection } from './FooterLinksSection';
+import { FooterTextSection } from './FooterTextSection';
 
 const Footer = () => {
-    return ( 
-        <section id="footer">
-            <div id='navigation-list'>  
-                <div id='left-container' className='left-container'>
-                    <div className='navigate-title'>
-                        <p>NAVIGATE</p>
-                    </div>
-                    <a href="#home" className='footer-link'>Home</a>
-                    <a href="#about" className='footer-link'>About</a>
-                    <a href="#projects" className='footer-link'>Projects</a>
-                    <a href="#contact" className='footer-link'>Contact</a>
-                </div>
+  return (
+    <Stack id="footer">
+      <Container className="top-container">
+        <FooterLinksSection />
+        <FooterTextSection />
+      </Container>
 
-                <div id='right-container' className='right-container'>
-                    <a href="https://www.linkedin.com/in/lara-aguerre-982b25221/" target="_blank" className='footer-link'>LinkedIn</a>
-                </div>
-            </div>
-            <p className='footer-title'>LARA AGUERRE</p>
-            <p className='footer-text'>Made with ❤️</p>
-        </section>
-    )
-}
+      <p className="footer-title">LARA AGUERRE</p>
+      <p className="footer-text">© 2026</p>
+    </Stack>
+  );
+};
 
 export default Footer;
