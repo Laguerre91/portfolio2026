@@ -1,10 +1,16 @@
 #footer {
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: black;
     height: 100%;
     width: 100%;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     opacity: 1;
+    padding: 50px 30px 30px;
+
 }
 
 #navigation-list { 
@@ -22,7 +28,7 @@
     width: min-content;
 }
 
-#left-container {
+.left-container {
     color: white;
     align-items: flex-start;
     display: flex;
@@ -35,6 +41,18 @@
     overflow: hidden;
     padding: 0;
     position: relative;
+}
+
+.navigate-title {
+    font-weight: 200;
+    color: rgb(189, 28, 28);
+}
+
+.left-container a {
+    text-decoration: none;
+    color: rgb(204, 41, 41);
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .footer-title {
