@@ -10,8 +10,8 @@ const navigateLinks: FooterLink[] = [
 ];
 
 const socialLinks: FooterLink[] = [
-  { label: 'LinkedIn', href: '#home' },
-  { label: 'GitHub', href: '#about' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/lara-aguerre-developer/' },
+  { label: 'GitHub', href: 'https://github.com/Laguerre91' },
 ];
 
 export const FooterLinksSection = () => {
