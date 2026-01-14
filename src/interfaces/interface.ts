@@ -1,9 +1,9 @@
-export interface FooterLink {
+export interface Links {
   label: string;
   href: string;
 }
 
-export interface FooterLinkListProps {
+export interface LinkListProps {
   title: string;
-  links: FooterLink[];
+  links: Links[];
 }

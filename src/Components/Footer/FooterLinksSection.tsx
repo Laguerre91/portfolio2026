@@ -1,15 +1,11 @@
 import { Box } from '@chakra-ui/react';
 import { FooterLinkList } from './FooterLinkList';
-import type { FooterLink } from '../../interfaces/interface';
+import type { Links } from '../../interfaces/interface';
+import { NAVIGATION_LINKS } from '../../constants/navigation';
 
-const navigateLinks: FooterLink[] = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
-];
+const navigateLinks: Links[] = NAVIGATION_LINKS;
 
-const socialLinks: FooterLink[] = [
+const socialLinks: Links[] = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/lara-aguerre-developer/' },
   { label: 'GitHub', href: 'https://github.com/Laguerre91' },
 ];
