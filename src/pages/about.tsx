@@ -7,8 +7,8 @@ export default function AboutPage() {
       <AboutSection
         imageSrc={aboutImage}
         imageAlt="About Section Background"
-        title="Create Immersive Experiences"
-        subtitle="Bold ideas, executed with precision."
+        title="Something About Me"
+        subtitle="I have a degree in audiovisual production. Passionate about technology. I blend design, experience, and technology in the way I develop software."
       />
       {/* Otras secciones debajo */}
     </>

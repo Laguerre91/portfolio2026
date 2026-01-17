@@ -11,11 +11,8 @@ const AboutBackground: React.FC<AboutBackgroundProps> = ({ src, alt = "" }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const progress = useScrollPosition(sectionRef, 1); // 0 → 1 según scroll
 
-  // Movimiento horizontal: empieza -50px, llega a 0
-  const translateX = -50 * (1 - progress);
-
   // Escala: empieza 0.95, llega a 1
-  const scale = 0.95 + 0.05 * progress;
+   const scale = 0.5 + 0.5 * progress;
 
   return (
     <div ref={sectionRef} className={styles.aboutSection}>
@@ -24,7 +21,7 @@ const AboutBackground: React.FC<AboutBackgroundProps> = ({ src, alt = "" }) => {
         src={src}
         alt={alt}
         style={{
-          transform: `translate(${translateX}px, -50%) scale(${scale})`,
+          transform: `scale(${scale})`,
         }}
       />
     </div>
