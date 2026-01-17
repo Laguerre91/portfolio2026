@@ -4,27 +4,25 @@ import { useScrollPosition } from "./useScrollPosition";
 
 interface AboutBackgroundProps {
   src: string;
-  poster?: string;
+  alt?: string;
 }
 
-const AboutBackground: React.FC<AboutBackgroundProps> = ({ src, poster }) => {
+const AboutBackground: React.FC<AboutBackgroundProps> = ({ src, alt = "" }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const progress = useScrollPosition(sectionRef, 1); 
+  const progress = useScrollPosition(sectionRef, 1); // 0 → 1 según scroll
 
+  // Movimiento horizontal: empieza -50px, llega a 0
+  const translateX = -50 * (1 - progress);
 
-  const translateX = -50 * (1 - progress); 
-
-  const scale = 0.95 + 0.05 * progress; 
+  // Escala: empieza 0.95, llega a 1
+  const scale = 0.95 + 0.05 * progress;
 
   return (
     <div ref={sectionRef} className={styles.aboutSection}>
-      <video
-        className={styles.aboutVideo}
+      <img
+        className={styles.aboutImage}
         src={src}
-        poster={poster}
-        autoPlay
-        loop
-        muted
+        alt={alt}
         style={{
           transform: `translate(${translateX}px, -50%) scale(${scale})`,
         }}

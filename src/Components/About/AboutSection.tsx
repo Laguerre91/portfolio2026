@@ -4,21 +4,21 @@ import AboutText from "./AboutText";
 import styles from "./AboutSection.module.css";
 
 interface AboutSectionProps {
-  videoSrc: string;
-  poster?: string;
+  imageSrc: string;      
+  imageAlt?: string;      
   title: string;
   subtitle?: string;
 }
 
 const AboutSection: React.FC<AboutSectionProps> = ({
-  videoSrc,
-  poster,
+  imageSrc,
+  imageAlt,
   title,
   subtitle,
 }) => {
   return (
     <section className={styles.aboutSection}>
-      <AboutBackground src={videoSrc} poster={poster} />
+      <AboutBackground src={imageSrc} alt={imageAlt} />
       <AboutText title={title} subtitle={subtitle} />
     </section>
   );

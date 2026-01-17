@@ -1,11 +1,12 @@
 import AboutSection from "../Components/About/AboutSection";
+import aboutImage from "../assets/about-image.jpg";
 
 export default function AboutPage() {
   return (
     <>
       <AboutSection
-        videoSrc="/videos/about-video.mp4"
-        poster="/videos/about-poster.jpg"
+        imageSrc={aboutImage}
+        imageAlt="About Section Background"
         title="Create Immersive Experiences"
         subtitle="Bold ideas, executed with precision."
       />
