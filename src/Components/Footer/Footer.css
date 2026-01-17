@@ -1,71 +1,53 @@
+/* Base Footer */
 #footer {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
     background-color: black;
-    height: 100%;
     width: 100%;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    opacity: 1;
-    padding: 50px 30px 30px;
+    padding: clamp(30px, 3vw, 50px) clamp(20px, 3vw, 30px) clamp(20px, 2vw, 30px);
 }
 
+/* Top container */
 .top-container {
-    align-items: start;
     display: flex;
-    flex: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: min-content;
     justify-content: space-between;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    width: 100%;
-}
-
-#navigation-list { 
-    align-items: start;
-    display: flex;
-    flex: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 20px;
-    height: min-content;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    width: min-content;
-}
-
-.links-container {
-    color: white;
     align-items: flex-start;
-    display: flex;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 22px;
-    height: min-content;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    margin-right: 50px;
+    width: 100%;
+    gap: clamp(20px, 2vw, 50px);
 }
 
+/* Navigation list */
+#navigation-list {
+    display: flex;
+    flex-direction: row;
+    gap: clamp(15px, 2vw, 30px);
+}
+
+/* Links container */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 1.5vw, 22px);
+    margin-right: clamp(20px, 2vw, 50px);
+    color: white;
+}
+
+/* Navigate title */
 .navigate-title {
     font-weight: 300;
     color: rgb(204, 41, 41);
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
 }
 
+/* Links */
 .links-container a {
     text-decoration: none;
     color: rgb(123,26,25);
-    font-size: 22px;
+    font-size: clamp(1rem, 1.5vw, 1.4rem);
     font-weight: 500;
 }
 
@@ -73,35 +55,97 @@
     color: rgb(204, 41, 41);
 }
 
+/* Text section */
 .text-title {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 900;
     color: #cc2a28;
-    margin-bottom: 50px;
+    margin-bottom: clamp(20px, 3vw, 50px);
     width: 70%;
-    padding: 10px;
 }
 
 .get-in-touch-text {
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
     font-weight: 200;
     color: #cc2a28;
     width: 70%;
-    padding: 10px;
     text-decoration: underline;
     text-underline-offset: 5px;
 }
 
+/* Footer titles */
 .footer-title {
     color: #cc2a28;
     font-weight: 800;
-    font-size: 11.5rem;
-    padding: 10px;
+    font-size: clamp(4rem, 12vw, 14.7rem);
+    line-height: 0.9;
+    padding: clamp(5px, 1vw, 40px);
+    margin: 20px;
 }
 
 .footer-text {
     font-weight: 200;
-    font-size: 18px;
+    font-size: clamp(1rem, 1vw, 1.5rem);
     color: #cc2a28;
-    padding: 10px;
+}
+
+/* MEDIA QUERIES */
+
+/* Laptops / smaller desktops */
+@media (max-width: 1024px) {
+    #navigation-list {
+        flex-direction: row !important;
+    }
+
+    .footer-title {
+        font-size: clamp(3rem, 10vw, 8rem);
+        padding: clamp(5px, 1vw, 15px);
+    }
+
+    .links-container {
+        gap: clamp(8px, 1.5vw, 15px);
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .top-container {
+        flex-direction: column;
+        gap: clamp(20px, 4vw, 40px);
+    }
+
+    #navigation-list {
+        flex-direction: column;
+        gap: clamp(20px, 3vw, 40px);
+    }
+
+    .links-container {
+        margin-right: 0;
+    }
+
+    .text-title,
+    .get-in-touch-text {
+        width: 100%;
+    }
+
+    .footer-title {
+        font-size: clamp(3rem, 10vw, 5rem);
+        line-height: 1;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .footer-title {
+        font-size: clamp(2rem, 12vw, 3.5rem);
+    }
+
+    .links-container a {
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
+    }
+
+    .text-title,
+    .get-in-touch-text {
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    }
 }

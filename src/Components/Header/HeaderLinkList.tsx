@@ -3,7 +3,7 @@ import type { LinkListProps } from '../../interfaces/interface';
 
 export const HeaderLinkList = ({ links }: LinkListProps) => {
   return (
-    <Box className="links-container">
+    <Box className="links-container-header">
       {links.map((link) => (
         <Link
           key={link.label}
