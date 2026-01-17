@@ -9,15 +9,14 @@ interface AboutBackgroundProps {
 
 const AboutBackground: React.FC<AboutBackgroundProps> = ({ src, alt = "" }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const progress = useScrollPosition(sectionRef, 1); // 0 → 1 según scroll
+  const progress = useScrollPosition(sectionRef, 1); 
 
   // Escala: empieza 0.95, llega a 1
-   const scale = 0.5 + 0.5 * progress;
+ const scale = 0.6 + 0.4 * progress;
 
   return (
-    <div ref={sectionRef} className={styles.aboutSection}>
-      <img
-        className={styles.aboutImage}
+    <div ref={sectionRef} className={styles.aboutImage}>
+      <img      
         src={src}
         alt={alt}
         style={{
