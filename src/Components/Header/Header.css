@@ -40,7 +40,7 @@
     animation: header-title-appearance 1.5s ease-in;
     color: black;
     font-weight: 800;
-    font-size: clamp(4rem, 12vw, 14.5rem);
+    font-size: clamp(4rem, 13vw, 14.5rem);
     padding: clamp(5px, 1vw, 15px);
     line-height: 0.9;
 }

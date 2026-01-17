@@ -6,7 +6,7 @@ export default function AboutPage() {
     <>
       <AboutSection
         imageSrc={aboutImage}
-        imageAlt="About Section Background"
+        imageAlt="A photo of me"
         title="Something About Me"
         subtitle="I have a degree in audiovisual production. Passionate about technology. I blend design, experience, and technology in the way I develop software."
       />
