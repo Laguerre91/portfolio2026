@@ -2,13 +2,7 @@ import React from "react";
 import AboutBackground from "./AboutBackground";
 import AboutText from "./AboutText";
 import styles from "./AboutSection.module.css";
-
-interface AboutSectionProps {
-  imageSrc: string;      
-  imageAlt?: string;      
-  title: string;
-  subtitle?: string;
-}
+import { type AboutSectionProps } from "../../interfaces/interface";
 
 const AboutSection: React.FC<AboutSectionProps> = ({
   imageSrc,
