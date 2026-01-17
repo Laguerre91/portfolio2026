@@ -7,7 +7,13 @@
     height: 100vh;
     width: 100%;
     opacity: 1;
-    padding: 50px 30px 30px;
+    padding: 0px 30px;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-title {
@@ -47,3 +53,37 @@
     font-size: 1.5rem;
     padding: 20px;
 }
+
+.underline-hover {
+    position: relative;
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+.underline-hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -4px;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(1);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+}
+
+.underline-hover:hover::after {
+    transform: scaleX(0.5);
+}
+
+.header-link {
+    color: rgba(0, 0, 0, 0.625) !important;
+}
+
+.header-link:hover {
+    color: black !important;
+}
+
+
+

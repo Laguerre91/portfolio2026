@@ -8,7 +8,7 @@ export const HeaderLinkList = ({ links }: LinkListProps) => {
         <Link
           key={link.label}
           href={link.href}
-          className="header-link"
+          className="header-link underline-hover"
         >
           {link.label}
         </Link>
