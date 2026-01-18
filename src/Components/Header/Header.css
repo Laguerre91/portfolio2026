@@ -33,6 +33,7 @@
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     margin-right: clamp(15px, 2vw, 30px);
     animation: header-links-appearance 2s ease-in;
+    width: 40px;
 }
 
 /* Header title */
@@ -170,7 +171,7 @@
 /* Tablets */
 @media (max-width: 768px) {
     .top-container {
-        flex-direction: column;
+        flex-direction: row !important;
         gap: clamp(15px, 4vw, 30px);
     }
 
@@ -196,7 +197,8 @@
 /* Mobile */
 @media (max-width: 480px) {
     .header-title {
-        font-size: clamp(2rem, 12vw, 3.5rem);
+        font-size: clamp(5rem, 12vw, 3.5rem);
+        text-align: center;
     }
 
     .higher-text {
@@ -204,7 +206,7 @@
     }
 
     .lower-text {
-        font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+        font-size: clamp(1.5rem, 2.5vw, 1.2rem);
     }
 
     .header-link {

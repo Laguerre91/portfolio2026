@@ -12,7 +12,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
   subtitle,
 }) => {
   return (
-    <Box as="section" className={styles.aboutSection}>
+    <Box as="section" className={styles.aboutSection} id="about">
       <AboutBackground src={imageSrc} alt={imageAlt} />
       <AboutText title={title} subtitle={subtitle} />
     </Box>

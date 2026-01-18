@@ -50,3 +50,35 @@
   font-size: clamp(1.2rem, 2vw, 2rem);
   margin-top: 10px;
 }
+
+/* =====================
+   RESPONSIVE MOBILE
+===================== */
+@media (max-width: 768px) {
+  .aboutSection {
+    background-color: black; /* fallback si la imagen tarda en cargar */
+    background-image: url('../../assets/about-image.jpg'); /* tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Ocultar la img flotante en mobile */
+  .aboutImage {
+    display: none;
+  }
+
+  /* Ajustes de padding/texto para móviles */
+  .aboutTextContainer {
+    padding: 20px;
+    background-color: black;
+    border-radius: 30px;
+  }
+
+  .aboutTitle {
+    font-size: clamp(3rem, 10vw, 4rem);
+  }
+
+  .aboutSubtitle {
+    font-size: clamp(1.5rem, 3vw, 1.5rem);
+  }
+}
