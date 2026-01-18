@@ -10,11 +10,31 @@
     text-align: center;
 }
 
+.close-btn {
+  display: flex;
+  justify-content: end;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+
+.contact-form-wrapper input:focus,
+.contact-form-wrapper textarea:focus {
+    outline: none;;
+    border: 2px solid black;
+    box-shadow: none;
+    background-color: #cc2a28;       
+}
+
 
 .contact-button {
     background-color: black;
