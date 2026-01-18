@@ -1,4 +1,4 @@
-import { Box, Button, Input, Textarea, Field } from "@chakra-ui/react";
+import { Box, Button, Input, Textarea, Field, Text } from "@chakra-ui/react";
 import { createToaster } from "@chakra-ui/react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
@@ -42,6 +42,7 @@ const ContactForm = () => {
 
   return (
     <Box className="contact-form-wrapper">
+        <Text className="modal-title">Let's get in touch!</Text>
       <form ref={formRef} onSubmit={sendEmail}>
         <Field.Root required>
           <Field.Label>Name</Field.Label>

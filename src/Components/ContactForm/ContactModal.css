@@ -9,7 +9,8 @@
 }
 
 .contact-modal {
-  background: black;
+  background: #cc2a28;
+  color: black;
   padding: 40px;
   border-radius: 20px;
   max-width: 500px;
