@@ -14,7 +14,7 @@ export const PROJECTS: Project[] = [
     title: "Iron Invaders",
     stack: ["HTML", "CSS", "JavaScript"],
     description: "A personalized tribute to the classic Space Invaders arcade game. This modern take on the iconic shooter features custom graphics, updated mechanics, and unique gameplay elements while preserving the addictive arcade action that made the original a timeless classic.",
-    image: "/images/portfolio.png",
+    image: "../src/assets/ironInvaders.png",
     link: "https://franpazos.github.io/"
     },
 ];
