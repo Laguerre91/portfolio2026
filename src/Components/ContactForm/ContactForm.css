@@ -1,0 +1,30 @@
+.contact-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-modal {
+  background: black;
+  color: #cc2a28;
+  width: min(600px, 90%);
+  padding: 40px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #cc2a28;
+  cursor: pointer;
+}
