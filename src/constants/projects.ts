@@ -6,7 +6,7 @@ export const PROJECTS: Project[] = [
     title: "Mentalia",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     description: "A mental health web application featuring daily mood tracking, direct communication with licensed psychologists, and a community forum for peer support. The platform helps users monitor emotional patterns, access professional help, and connect with others on their mental wellness journey.",
-    image: "/images/portfolio.png",
+    image: '../src/assets/Mentalia.png',
     link: "https://mentalia.netlify.app/"
     },
     {
