@@ -2,3 +2,8 @@
   font-family: "Roboto", sans-serif;
   background-color: #cc2a28;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
