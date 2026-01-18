@@ -24,7 +24,12 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
+}
+
+form label {
+  font-weight: 600;
+  color: black;
 }
 
 .contact-form-wrapper input:focus,
