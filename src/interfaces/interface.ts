@@ -26,4 +26,12 @@ export interface AboutBackgroundProps {
   alt?: string;
 }
 
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  stack: string[]
+  image: string;
+  link?: string;
+}
 
