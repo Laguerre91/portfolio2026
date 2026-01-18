@@ -1,6 +1,7 @@
 export interface Links {
   label: string;
   href: string;
+  isExternal?: boolean;
 }
 
 export interface LinkListProps {

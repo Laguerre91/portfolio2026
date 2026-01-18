@@ -16,7 +16,7 @@ const Header = () => {
             <Heading className="header-title">LARA AGUERRE</Heading>
 
             <Box className="lower-text">
-                <Text>Based in Madrid</Text>
+                <Text>BASED IN MADRID</Text>
             </Box>
         </Stack>
     )

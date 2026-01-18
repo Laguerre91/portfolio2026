@@ -13,7 +13,7 @@ export const FooterLinkList = ({ title, links }: LinkListProps) => {
           key={link.label}
           href={link.href}
           className="footer-link"
-          target='_blank'
+          target={link.isExternal ? '_blank' : undefined}
         >
           {link.label}
         </Link>

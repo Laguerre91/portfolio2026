@@ -1,6 +1,7 @@
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 import AboutPage from './pages/about'
+import ProjectsPage from './pages/projects'
 import './App.css'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
       <Header />
       <AboutPage />
+      <ProjectsPage />
       <Footer />
     </>
   )

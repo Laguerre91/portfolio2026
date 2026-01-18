@@ -1,9 +1,9 @@
+
 /* Base Footer */
 #footer {
     position: relative;
     min-height: 100vh;
     display: flex;
-    /* QUITA el top: 100vh completamente */
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -12,8 +12,14 @@
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     padding: clamp(30px, 3vw, 50px) clamp(20px, 3vw, 30px) clamp(20px, 2vw, 30px);
-    z-index: 20; /* Mayor que aboutSection */
+    z-index: 50;
 }
+
+.footer-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Top container */
 .top-container {
     display: flex;
@@ -80,7 +86,7 @@
 .footer-title {
     color: #cc2a28;
     font-weight: 800;
-    font-size: clamp(4rem, 12vw, 14.7rem);
+    font-size: clamp(4rem, 12.4vw, 14.7rem);
     line-height: 0.9;
     padding: clamp(5px, 1vw, 40px);
     margin: 20px;
