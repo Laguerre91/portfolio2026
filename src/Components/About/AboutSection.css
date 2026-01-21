@@ -30,7 +30,7 @@
   color: rgb(238,110,41);
   padding: 40px;
   max-width: 90%;
-  opacity: 0;
+  opacity: 0.8;
   transform: translateY(50px);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }

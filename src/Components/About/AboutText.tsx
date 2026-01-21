@@ -8,7 +8,6 @@ const AboutText: React.FC<AboutTextProps> = ({ title, subtitle }) => {
   const textRef = useRef<HTMLDivElement>(null);
   const progress = useScrollPosition(textRef); 
 
-  const opacity = progress;
   const translateY = 50 * (1 - progress);
   const scale = 0.95 + 0.05 * progress;
 
@@ -17,7 +16,6 @@ const AboutText: React.FC<AboutTextProps> = ({ title, subtitle }) => {
       ref={textRef}
       className="aboutTextContainer" 
       style={{
-        opacity,
         transform: `translateY(${translateY}px) scale(${scale})`,
       }}
     >
