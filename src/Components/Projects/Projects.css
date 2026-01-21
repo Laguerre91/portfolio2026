@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: #cc2a28;
-  padding: clamp(4rem, 5vw, 10rem);
+  padding: clamp(2rem, 5vw, 10rem);
   color: black;
   display: flex;
   flex-direction: column;
