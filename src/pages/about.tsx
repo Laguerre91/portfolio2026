@@ -1,6 +1,6 @@
 import AboutSection from "../Components/About/AboutSection";
 import ExperienceSection from "../Components/About/ExperienceSection";
-import aboutImage from "../assets/about-image.jpg";
+import aboutImage from "./../assets/aboutImage.jpg";
 
 export default function AboutPage() {
   return (
