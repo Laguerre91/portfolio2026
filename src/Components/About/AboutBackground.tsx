@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Box, Image } from "@chakra-ui/react";
-import styles from "./AboutSection.module.css";
+import "./AboutSection.css"
 import { useScrollPosition } from "./useScrollPosition";
 import type { AboutBackgroundProps } from "../../interfaces/interface";
 
@@ -11,11 +11,11 @@ const AboutBackground: React.FC<AboutBackgroundProps> = ({ src, alt = "" }) => {
   const translateX = (-100 * (1 - progress)).toFixed(2);
 
   return (
-    <Box ref={sectionRef} className={styles.aboutImage} position="relative">
+    <Box ref={sectionRef} className="aboutImage" position="relative">
       <Image
         src={src}
         alt={alt}
-        className={styles.aboutImage} 
+        className="aboutImage" 
         style={{
           transform: `translateX(${translateX}%)`,
         }}

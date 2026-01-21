@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
-import styles from "./AboutSection.module.css";
+import "./AboutSection.css"
 import { useScrollPosition } from "./useScrollPosition";
 import type { AboutTextProps } from "../../interfaces/interface";
 
@@ -15,17 +15,17 @@ const AboutText: React.FC<AboutTextProps> = ({ title, subtitle }) => {
   return (
     <Box
       ref={textRef}
-      className={styles.aboutTextContainer} 
+      className="aboutTextContainer" 
       style={{
         opacity,
         transform: `translateY(${translateY}px) scale(${scale})`,
       }}
     >
-      <Heading as="h1" className={styles.aboutTitle}>
+      <Heading as="h1" className="aboutTitle">
         {title}
       </Heading>
       {subtitle && (
-        <Text as="p" className={styles.aboutSubtitle}>
+        <Text as="p" className="aboutSubtitle">
           {subtitle}
         </Text>
       )}

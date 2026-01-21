@@ -1,7 +1,7 @@
 import { Stack } from '@chakra-ui/react';
 import type { Experience } from '../../interfaces/interface';
 import ExperienceItem from './ExperienceItem';
-import styles from './ExperienceSection.module.css';
+import "./ExperienceSection.css"
 
 interface Props {
   experiences: Experience[];
@@ -9,7 +9,7 @@ interface Props {
 
 const ExperienceList = ({ experiences }: Props) => {
   return (
-    <Stack className={styles.experienceList}>
+    <Stack className="experienceList">
       {experiences.map(exp => (
         <ExperienceItem key={exp.id} experience={exp} />
       ))}

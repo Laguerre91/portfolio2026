@@ -2,7 +2,7 @@ import { Box, Text } from '@chakra-ui/react';
 import { useRef } from 'react';
 import { useScrollPosition } from '../About/useScrollPosition';
 import type { Experience } from '../../interfaces/interface';
-import styles from './ExperienceSection.module.css';
+import "./ExperienceSection.css"
 
 interface Props {
   experience: Experience;
@@ -17,25 +17,25 @@ const itemRef = useRef<HTMLDivElement>(null);
   const opacity = progress;
 
   return (
-    <Box ref={itemRef} className={styles.experienceItem} style={{
+    <Box ref={itemRef} className="experienceItem" style={{
         transform: `translateX(${translateX}px)`,
         opacity,
       }}>
-      <Box className={styles.experienceHeader}>
-        <Text className={styles.experienceRole}>
+      <Box className="experienceHeader">
+        <Text className="experienceRole">
           {experience.role}
         </Text>
 
-        <Text className={styles.experienceCompany}>
+        <Text className="experienceCompany">
           {experience.company}
         </Text>
 
-        <Text className={styles.experiencePeriod}>
+        <Text className="experiencePeriod">
           {experience.period}
         </Text>
       </Box>
 
-      <Box as="ul" className={styles.experienceDescription}>
+      <Box as="ul" className="experienceDescription">
         {experience.description.map((item, index) => (
           <Box as="li" key={index}>
             {item}
