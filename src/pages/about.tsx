@@ -1,8 +1,9 @@
 import AboutSection from "../Components/About/AboutSection";
 import ExperienceSection from "../Components/About/ExperienceSection";
-import aboutImage from "./../assets/aboutImage.jpg";
+import aboutImage from "./../assets/about-image.jpg";
 
 export default function AboutPage() {
+        console.log("🚀 ~ AboutPage ~ aboutImage:", aboutImage)
   return (
     <>
       <AboutSection

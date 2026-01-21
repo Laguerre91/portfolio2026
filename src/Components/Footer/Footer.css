@@ -125,7 +125,7 @@
 
     #navigation-list {
         flex-direction: column;
-        gap: clamp(20px, 3vw, 40px);
+        gap: clamp(100px, 3vw, 40px);
     }
 
     .links-container {
