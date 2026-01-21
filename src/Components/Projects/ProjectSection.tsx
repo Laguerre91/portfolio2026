@@ -2,7 +2,7 @@ import { Box, Heading } from '@chakra-ui/react';
 import { useRef } from 'react';
 import { PROJECTS } from '../../constants/projects';
 import ProjectList from './ProjectList';
-import './projects.css';
+import './Projects.css';
 import { useScrollPosition } from '../About/useScrollPosition';
 
 const ProjectsSection = () => {
